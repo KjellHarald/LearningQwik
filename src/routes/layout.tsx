@@ -1,5 +1,6 @@
 import { component$, Slot } from '@builder.io/qwik';
 import Header from '../components/header/header';
+import ManualNav from '~/components/ManualNav';
 
 export default component$(() => {
   return (
@@ -7,13 +8,12 @@ export default component$(() => {
       <main>
         <Header />
         <section>
+          <ManualNav />
           <Slot />
         </section>
       </main>
       <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-        </a>
+        &copy; 2022
       </footer>
     </>
   );

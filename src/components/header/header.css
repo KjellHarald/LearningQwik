@@ -23,12 +23,20 @@ header li {
   padding: 0;
 }
 
+/*
 header li a {
   display: inline-block;
   padding: 15px 10px;
   text-decoration: none;
+}*/
+
+a .hlink {
+  display: inline-block;
+  padding: 15px 10px;
+  margin: 15px 10px;
+  text-decoration: none;
 }
 
-header li a:hover {
+a .hlink:hover {
   text-decoration: underline;
 }

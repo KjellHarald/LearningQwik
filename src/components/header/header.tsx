@@ -1,4 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import { QwikLogo } from "../icons/qwik";
 import styles from "./header.css?inline";
 
@@ -14,10 +15,14 @@ export default component$(() => {
       </div>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/" style={{display: "inline-block", padding: "15px 10px"}}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="/learning/">Learning Qwik</a>
+          <Link href="/learning/" style={{display: "inline-block", padding: "15px 10px"}}>
+            Learning Qwik
+          </Link>
         </li>
       </ul>
     </header>

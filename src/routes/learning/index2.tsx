@@ -1,8 +1,9 @@
-import { JSX } from "@builder.io/qwik/jsx-runtime";
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from "@builder.io/qwik-city";
 
-const LearningQwik = (): JSX.Element => {
+export default component$(()=>{
   return (
-    <div className="learningqwik">
+    <div>
       <h2>Learning Qwik</h2>
       <p>
         Qwik is an <b>Edge</b> Framework for JavaScript!
@@ -29,5 +30,14 @@ const LearningQwik = (): JSX.Element => {
       </p>
     </div>
   );
-};
-export default LearningQwik;
+})
+
+export const head: DocumentHead = {
+  title: "Learning Qwik",
+  meta: [
+    {
+      name: "description",
+      content: "Learning Qwik",
+    },
+  ],
+}
